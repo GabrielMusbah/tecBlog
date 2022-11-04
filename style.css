@@ -98,11 +98,15 @@ main article section h2 {
 
 main article section span {
     color: #000000;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 700;
 }
 
-main article section p {
+main article section .sitacao{
+    background-color: #CCC;
+}
+
+main article section div p {
     color: #000000;
     font-size: 1em;
     text-align: justify;
@@ -111,6 +115,10 @@ main article section p {
     padding-bottom: 10px;
 
     
+}
+
+main article section div {
+    padding: 10px
 }
 
 main article section p span .sitacao{
