@@ -1,0 +1,62 @@
+/* Formatação geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+/* Layout - header*/
+
+header {
+    background-color: #f7b600;
+    padding: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header h1 {
+    display: inline;
+    color: #4e4e4e;
+    font-size: 3em;
+    padding: 15px;
+}
+
+header h1 span {
+    display: inline;
+    color: white;
+}
+
+/* Layout - nav*/
+
+nav {
+    background-color: #f7b600;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #f7b600;
+}
+
+/* layout - main */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main article {
+    background-color: white;
+}
