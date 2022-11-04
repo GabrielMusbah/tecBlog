@@ -108,7 +108,7 @@ main article section p {
     padding-bottom: 10px;
 }
 
-main article section p span {
+main article section p span .sitacao{
     background-color: rgba(155,155,155,0.08);
     font-style: italic;
 }
