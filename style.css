@@ -8,6 +8,7 @@ body {
     font-size: 1em;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background: #e6e6e6;
+    
 }
 
 /* Layout - header*/
@@ -59,6 +60,8 @@ main {
 
     padding-top: 50px;
 }
+
+/* layout - main - article*/
 
 main article {
     width: 50%;
@@ -133,9 +136,65 @@ main article figure img {
     width: 95%;
 }
 
+
+
+/* layout - main - aside*/
+
 main aside {
     width: 20%;
-    background-color: #4e4e4e;
     margin-left: 20px;
+    margin-bottom: 20px;
+    height: 420px;
 }
 
+main aside div {
+    height: 200px;
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+main aside div h3 {
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+
+}
+
+main aside div p {
+    font-size: 0.8em;
+    padding: 15px;
+}
+
+main aside div p:first-of-type {
+    border-bottom: 1px dotted #CCC;
+}
+
+main aside div p a {
+    text-decoration: none;
+    color: #f7b600;
+}
+
+main aside div a {
+    text-decoration: none;
+    color: #f7b600;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+
+}
+
+/* footer */
+
+footer {
+    width: 100% - 10px; 
+    height: 20px;
+
+    text-align: center;
+    padding: 20px;
+    background: #CCC;
+}
