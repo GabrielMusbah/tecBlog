@@ -109,6 +109,8 @@ main article section p {
 
     padding: 20px;
     padding-bottom: 10px;
+
+    
 }
 
 main article section p span .sitacao{
@@ -185,6 +187,8 @@ main aside div a {
     flex-direction: column;
 
     padding: 5px;
+
+    padding-top: 10px;
 
 }
 
