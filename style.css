@@ -17,15 +17,19 @@ body {
 
 header {
     background-color: #f7b600;
-    padding: 20px;
     text-align: center;
-    padding-top: 40px;
 }
 
 header h1 {
     color: #4e4e4e;
     font-size: 3em;
-    padding: 15px;
+    height: 90px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 span {
@@ -44,6 +48,7 @@ nav a {
     text-decoration: none;
     padding: 10px 15px;
     color: white;
+    font-size: 18px;
 }
 
 nav a:hover {
@@ -57,8 +62,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 /* layout - main - article*/
@@ -66,26 +70,19 @@ main {
 main article {
     width: 50%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-
+    padding-right: 30px;
 }
-
-main article div {
-
-    margin-bottom: 20px;
-
-}
-
 
 main article section {
     text-align: center;
     border-bottom: 1px solid #f4f4f4;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
+    padding: 15px 0px;
     background-color: white;
+}
+
+main article .box-article {
+    padding-bottom: 30px;
 }
 
 main article section h2 {   
@@ -94,18 +91,6 @@ main article section h2 {
     padding-bottom: 5px;
 }
 
-main article section .sitacao{
-    background-color: rgba(3, 3, 3, 0.08);
-    font-style: oblique;
-
-    font-family: monospace;
-
-    color: #000000;
-    font-size: 1em;
-
-}
-
-
 main article section div p {
     color: #000000;
     font-size: 1em;
@@ -113,19 +98,11 @@ main article section div p {
     padding: 20px;
 }
 
-main article section div {
-    padding: 10px
-}
-
-
 main article section a {
     text-decoration: none;
     font-weight: 600;
     color: #f7b600;
-    padding-bottom: 10px;
 }
-
-
 
 main article figure {
     display: flex;
@@ -138,13 +115,13 @@ main article figure img {
     width: 95%;
 }
 
-/* layout - main - espaco (gambiara) */
-
-main .espaco {
-    height: 100%;
-    width: 30px;
+main article section .sitacao{
+    background-color: rgba(3, 3, 3, 0.08);
+    font-style: oblique;
+    font-family: monospace;
+    color: #000000;
+    font-size: 1em;
 }
-
 
 /* layout - main - aside*/
 
@@ -177,17 +154,18 @@ main aside .box-aside-filha {
     justify-content: space-between;
 }
 
-
 main aside .box-aside-filha div {
     font-size: 0.8em;
     height: 94px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;;
 }
 
-
+main aside .box-aside-filha div:first-of-type {
+    border-bottom: 1px solid #565656
+}
 
 main aside .box-aside-pai .box-aside-filha a {
     text-decoration: none;
@@ -195,7 +173,6 @@ main aside .box-aside-pai .box-aside-filha a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 35px;
     font-size: 20px;
 }
 
@@ -207,9 +184,7 @@ main aside .box-aside-pai .box-aside-filha p {
 /* footer */
 
 footer {
-    width: 100% - 10px; 
     height: 20px;
-
     text-align: center;
     padding: 20px;
     background: #CCC;
@@ -227,16 +202,14 @@ footer {
    main article
    {
     width: 80%;
-    margin-right: 0px;
+    padding-right: 0px;
    }
 
    nav a {
     padding: 0px 10px;
    }
 
-   main .espaco {
-    display: none;
-   }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) /* telas pequenas, laptops */
@@ -255,6 +228,3 @@ footer {
         display: flex;
     }
 }
-
-
-
