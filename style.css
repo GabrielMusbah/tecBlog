@@ -8,6 +8,8 @@ body {
     font-size: 1em;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background: #e6e6e6;
+
+    min-width: 250px;
     
 }
 
@@ -18,8 +20,6 @@ header {
     padding: 20px;
     text-align: center;
     padding-top: 40px;
-
-
 }
 
 header h1 {
@@ -65,9 +65,6 @@ main {
 
 main article {
     width: 50%;
-
-    margin-right: 20px;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -97,15 +94,17 @@ main article section h2 {
     padding-bottom: 5px;
 }
 
-main article section span {
+main article section .sitacao{
+    background-color: rgba(3, 3, 3, 0.08);
+    font-style: oblique;
+
+    font-family: monospace;
+
     color: #000000;
     font-size: 1em;
-    font-weight: 700;
+
 }
 
-main article section .sitacao{
-    background-color: #CCC;
-}
 
 main article section div p {
     color: #000000;
@@ -114,18 +113,12 @@ main article section div p {
 
     padding: 20px;
     padding-bottom: 10px;
-
-    
 }
 
 main article section div {
     padding: 10px
 }
 
-main article section p span .sitacao{
-    background-color: rgba(155,155,155,0.08);
-    font-style: italic;
-}
 
 main article section a {
     text-decoration: none;
@@ -147,39 +140,53 @@ main article figure img {
     width: 95%;
 }
 
+/* layout - main - espaco (gambiara) */
+
+main .espaco {
+    height: 100%;
+    width: 30px;
+}
 
 
 /* layout - main - aside*/
 
 main aside {
     width: 20%;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    height: 420px;
+    height: 570px;
+    max-width: 250px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main aside div {
-    height: 200px;
+    height: 250px;
     background: white;
     padding: 10px;
-    margin-bottom: 20px;
-
     text-align: center;
 }
 
-main aside div h3 {
+main aside h3 {
     color: #565656;
     background: #CCC;
     padding: 5px;
 
 }
 
-main aside div p {
-    font-size: 0.8em;
-    padding: 15px;
+main aside .box-aside {
+    height: 198px;
 }
 
-main aside div p:first-of-type {
+main aside .box-aside a {
+    height: 43.6px;
+}
+
+main aside .box-aside div {
+    font-size: 0.8em;
+    padding-top: 15px;
+    height: 94px;
+}
+
+main aside .box-aside p:first-of-type {
     border-bottom: 1px dotted #CCC;
 }
 
@@ -187,6 +194,7 @@ main aside div p a {
     text-decoration: none;
     color: #f7b600;
     font-size: 15px;
+    
 }
 
 main aside div a {
@@ -194,8 +202,7 @@ main aside div a {
     color: #f7b600;
     display: flex;
     flex-direction: column;
-    padding: 5px;
-    padding-top: 10px;
+    justify-content: center;
 }
 
 /* footer */
@@ -209,28 +216,46 @@ footer {
     background: #CCC;
 }
 
-@media (max-width: 600px)
+/* @media */
+
+@media (max-width: 767px) /* dispositivos móveis, iPads, tablets */
 {
-  .teste
+   aside
    {
+    display: none;
+   }
+
+   main article
+   {
+    width: 80%;
+    margin-right: 0px;
+   }
+
+   nav a {
+    padding: 0px 10px;
+   }
+
+   main .espaco {
     display: none;
    }
 }
 
-@media (max-width: 600px)
+@media (min-width: 768px) and (max-width: 1024px) /* telas pequenas, laptops */
 {
-  .teste2
-   {
-    width: 80%;
-    margin-right: 0px;
-   }
+    main aside
+    {
+        width: 200px;
+        display: flex;
+    }
 }
 
-@media (max-width: 540px)
+@media (min-width: 1025px) /* telas normais */
 {
-  .teste2
-   {
-    width: 80%;
-    margin-right: 0px;
-   }
+    main aside
+    {
+        display: flex;
+    }
 }
+
+
+
